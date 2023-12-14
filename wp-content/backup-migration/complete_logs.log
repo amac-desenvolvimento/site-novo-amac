@@ -1,0 +1,89 @@
+[2022-10-27 17:31:57] [LOG] O plugin foi ativado
+[2022-10-27 17:35:34] [LOG] Criando backup
+[2022-10-27 17:35:34] [LOG] Encontrado6090 arquivos para fazer o backup.
+[2022-10-27 17:39:34] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas isso não foi registrado no registro de restauração)
+[2022-10-27 17:39:34] [ERROR] Mensagem de erro:Undefined variable: dbBackupEngine
+[2022-10-27 17:39:34] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/zipper/src/zip.php|527
+[2022-10-27 17:41:15] [LOG] Novo backup criado e seu nome é:backup.zip
+[2022-10-27 17:41:15] [LOG] CLI response:
+[2022-10-27 17:41:15] [LOG] {"status":"success","filename":"backup.zip","root":"http:\/\/studio.narrativa.etc.br\/amac\/wp-content\/plugins\/backup-backup\/"}
+[2022-10-27 17:41:15] [ERROR] Desligado
+[2022-10-27 17:41:15] [ERROR] Array
+(
+    [type] => 2
+    [message] => Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+    [file] => /home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php
+    [line] => 30
+)
+
+[2022-10-27 17:41:15] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas não foi registrado no registro de backup/restauração)
+[2022-10-27 17:41:15] [ERROR] Mensagem de erro:Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+[2022-10-27 17:41:15] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php|30
+[2022-10-27 18:00:05] [LOG] Backup automático solicitado em:2022-10-27, 18:00:05
+[2022-10-27 18:00:10] [LOG] Criando backup
+[2022-10-27 18:00:10] [LOG] Encontrado6090 arquivos para fazer o backup.
+[2022-10-27 18:00:10] [ERROR] O backup automático falhou às:2022-10-27, 18:00:10
+[2022-10-27 18:00:10] [ERROR] Error: Não foi possível fazer o backup devido a um erro interno do servidor.
+[2022-10-27 18:00:13] [ERROR] Não foi possível enviar a notificação por e-mail em relação a essa falha
+[2022-10-27 18:00:17] [LOG] Displaying some issues about email sending...
+[2022-10-27 18:28:23] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas isso não foi registrado no registro de restauração)
+[2022-10-27 18:28:23] [ERROR] Mensagem de erro:Undefined variable: dbBackupEngine
+[2022-10-27 18:28:23] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/zipper/src/zip.php|527
+[2022-10-27 18:32:03] [LOG] Novo backup criado e seu nome é:backup.zip
+[2022-10-27 18:32:03] [LOG] CLI response:
+[2022-10-27 18:32:03] [LOG] {"status":"success","filename":"backup.zip","root":"http:\/\/studio.narrativa.etc.br\/amac\/wp-content\/plugins\/backup-backup\/"}
+[2022-10-27 18:32:03] [ERROR] Desligado
+[2022-10-27 18:32:03] [ERROR] Array
+(
+    [type] => 2
+    [message] => Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+    [file] => /home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php
+    [line] => 30
+)
+
+[2022-10-27 18:32:03] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas não foi registrado no registro de backup/restauração)
+[2022-10-27 18:32:03] [ERROR] Mensagem de erro:Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+[2022-10-27 18:32:03] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php|30
+[2022-10-27 18:45:03] [LOG] Backup automático solicitado em:2022-10-27, 18:45:03
+[2022-10-27 18:45:08] [LOG] Criando backup
+[2022-10-27 18:45:08] [LOG] Encontrado6151 arquivos para fazer o backup.
+[2022-10-27 18:45:08] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas isso não foi registrado no registro de restauração)
+[2022-10-27 18:45:08] [ERROR] Mensagem de erro:Undefined variable: dbBackupEngine
+[2022-10-27 18:45:08] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/zipper/src/zip.php|320
+[2022-10-27 18:45:10] [LOG] CLI response:
+[2022-10-27 18:45:10] [LOG] {"status":"msg","why":"O processo de backup j\u00e1 est\u00e1 em execu\u00e7\u00e3o. Aguarde at\u00e9 que ele seja conclu\u00eddo.","level":"warning"}
+[2022-10-27 18:45:10] [ERROR] Desligado
+[2022-10-27 18:45:10] [ERROR] Array
+(
+    [type] => 2
+    [message] => Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+    [file] => /home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php
+    [line] => 30
+)
+
+[2022-10-27 18:45:10] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas não foi registrado no registro de backup/restauração)
+[2022-10-27 18:45:10] [ERROR] Mensagem de erro:Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+[2022-10-27 18:45:10] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php|30
+[2022-10-27 18:47:08] [LOG] Backup automático solicitado em:2022-10-27, 18:47:08
+[2022-10-27 18:47:41] [LOG] Backup automático solicitado em:2022-10-27, 18:47:41
+[2022-10-27 18:47:49] [LOG] Backup automático solicitado em:2022-10-27, 18:47:49
+[2022-10-27 18:48:38] [LOG] Criando backup
+[2022-10-27 18:48:38] [LOG] Encontrado6151 arquivos para fazer o backup.
+[2022-10-27 18:48:38] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas isso não foi registrado no registro de restauração)
+[2022-10-27 18:48:38] [ERROR] Mensagem de erro:Undefined variable: dbBackupEngine
+[2022-10-27 18:48:38] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/zipper/src/zip.php|320
+[2022-10-27 18:48:40] [LOG] CLI response:
+[2022-10-27 18:48:40] [LOG] {"status":"msg","why":"O processo de backup j\u00e1 est\u00e1 em execu\u00e7\u00e3o. Aguarde at\u00e9 que ele seja conclu\u00eddo.","level":"warning"}
+[2022-10-27 18:48:40] [ERROR] Desligado
+[2022-10-27 18:48:40] [ERROR] Array
+(
+    [type] => 2
+    [message] => Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+    [file] => /home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php
+    [line] => 30
+)
+
+[2022-10-27 18:48:40] [ERROR] Ocorreu um erro antes de solicitar o desligamento (mas não foi registrado no registro de backup/restauração)
+[2022-10-27 18:48:40] [ERROR] Mensagem de erro:Cannot modify header information - headers already sent by (output started at /home/n31vdrda/public_html/studio/amac/wp-content/plugins/backup-backup/includes/cli-handler.php:69)
+[2022-10-27 18:48:40] [ERROR] Arquivo/linha de erro:/home/n31vdrda/public_html/studio/amac/wp-content/plugins/download-manager/src/__/Session.php|30
+[2022-11-09 19:34:10] [LOG] O plugin foi desativado
