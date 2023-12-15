@@ -4,10 +4,11 @@
  */
 get_header();
 ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php
+         <?php
         $categorypost = get_the_category();
         ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+       
         <div class="image-main-blog text-center">
                 <?php the_post_thumbnail('full', ['class' => 'image-main-page']); ?>
 
@@ -24,6 +25,9 @@ get_header();
         <?php endwhile;
     endif;
     ?>
+        
+         <?php if (the_category(id) != 20): ?>   
+
     <hr class="hr-line-artigo">
     <div class="artigos-relacao mt-4">
         <h4 class="pt-2">+ Noticias, Artigos e afins </h4>
@@ -32,7 +36,7 @@ get_header();
             echo $categoryspost->id;
             $args = array(
                 'cat' => 6,
-                //'category__in' => array(6),
+                'category__in' => array(6),
                 'posts_per_page' => 3,
             );
         }
@@ -60,6 +64,8 @@ get_header();
 <?php comments_template('/comments.php'); ?> 
     </div>
 </div>
+
+<?php endif; ?>
 
 <?php
 get_footer();
