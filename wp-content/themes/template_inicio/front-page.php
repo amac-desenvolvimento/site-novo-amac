@@ -92,7 +92,7 @@ if ($alerta->have_posts()) {
                 endif;
                 ?>
                 <div class="card-body">
-                     <h5 class="card-title fw-light text-center"><?php the_title(); ?></h5>
+                    <a href="<?php the_permalink(); ?>">  <h5 class="card-title fw-light text-center"><?php the_title(); ?></h5></a>
                     
                 </div>
             </div>

@@ -8,6 +8,7 @@ get_header();
     <h3 class="text-center mb-1">Notícias, Artigos e Afins </h3>
     <?php
     $args = array(
+        'category__in' => array(6),
         'posts_per_page' => 200,
         'orderby' => 'date',
         'order' => 'desc'

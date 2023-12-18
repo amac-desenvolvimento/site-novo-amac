@@ -24,11 +24,14 @@ get_header();
             </div>
         <?php endwhile;
     endif;
-    ?>
-        
-         <?php if (the_category(id) != 20): ?>   
+    ?>  
+<?php
+$categories = get_the_category();
+$categories_slug = $categories[0]->slug;
 
-    <hr class="hr-line-artigo">
+if ( $categories_slug !="processo-seletivo" ) {;
+?>
+	<hr class="hr-line-artigo">
     <div class="artigos-relacao mt-4">
         <h4 class="pt-2">+ Noticias, Artigos e afins </h4>
         <?php
@@ -63,9 +66,13 @@ get_header();
     <div class="single-sidebar">
 <?php comments_template('/comments.php'); ?> 
     </div>
-</div>
-
-<?php endif; ?>
+</div>	
+<?php 
+} else { 
+    echo "<p class='font-weight-bold'><a href='http://10.35.0.12/site-novo-amac/?cat=20'>Retorne a listagem de Processos Seletivos</a></p>";
+   
+}
+?>
 
 <?php
 get_footer();
