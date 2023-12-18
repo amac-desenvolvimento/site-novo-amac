@@ -36,7 +36,7 @@
                         <?php
         wp_nav_menu( array(
             'theme_location'    => 'flaviene_lab_main_menu1',
-            'depth'             => 2,
+            'depth'             => 7,
             'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
