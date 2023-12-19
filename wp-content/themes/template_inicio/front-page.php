@@ -40,7 +40,7 @@ if ($alerta->have_posts()) {
     <div class="container_estatistica">
         <div class="child_container_estatistica endereco">
             <h2 class="mb-1">3.000</h2>
-            <span>Inauguração nova creche dia 18/12/2023</span><br />
+            <span>crianças atendidas pela creches</span><br />
 
         </div>
         <div class="child_container_estatistica websites">
