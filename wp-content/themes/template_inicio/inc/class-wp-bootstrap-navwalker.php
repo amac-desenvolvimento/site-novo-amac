@@ -7,9 +7,9 @@
  * @wordpress-plugin
  * Plugin Name: WP Bootstrap Navwalker
  * Plugin URI:  https://github.com/wp-bootstrap/wp-bootstrap-navwalker
- * Description: A custom WordPress nav walker class to implement the Bootstrap 4 navigation style in a custom theme using the WordPress built in menu manager.
+ * Description: A custom WordPress nav walker class to implement the Bootstrap 5 navigation style in a custom theme using the WordPress built in menu manager.
  * Author: Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz, IanDelMar - @IanDelMar
- * Version: 4.3.0
+ * Version: 5.3.0
  * Author URI: https://github.com/wp-bootstrap
  * GitHub Plugin URI: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
  * GitHub Branch: master
@@ -27,7 +27,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Whether the items_wrap contains schema microdata or not.
 		 *
-		 * @since 4.2.0
+		 * @since 5.2.0
 		 * @var boolean
 		 */
 		private $has_schema = false;
@@ -35,7 +35,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Ensure the items_wrap argument contains microdata.
 		 *
-		 * @since 4.2.0
+		 * @since 5.2.0
 		 */
 		public function __construct() {
 			if ( ! has_filter( 'wp_nav_menu_args', array( $this, 'add_schema_to_navbar_ul' ) ) ) {
@@ -68,7 +68,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			/**
 			 * Filters the CSS class(es) applied to a menu list element.
 			 *
-			 * @since WP 4.8.0
+			 * @since WP 5.8.0
 			 *
 			 * @param array    $classes The CSS classes that are applied to the menu `<ul>` element.
 			 * @param stdClass $args    An object of `wp_nav_menu()` arguments.
@@ -99,7 +99,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		 * Starts the element output.
 		 *
 		 * @since WP 3.0.0
-		 * @since WP 4.4.0 The {@see 'nav_menu_item_args'} filter was added.
+		 * @since WP 5.5.0 The {@see 'nav_menu_item_args'} filter was added.
 		 *
 		 * @see Walker_Nav_Menu::start_el()
 		 *
@@ -155,7 +155,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			/**
 			 * Filters the arguments for a single nav menu item.
 			 *
-			 * @since WP 4.4.0
+			 * @since WP 5.5.0
 			 *
 			 * @param WP_Nav_Menu_Args $args  An object of wp_nav_menu() arguments.
 			 * @param WP_Nav_Menu_Item $item  Menu item data object.
@@ -188,7 +188,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			 * Filters the ID applied to a menu item's list item element.
 			 *
 			 * @since WP 3.0.1
-			 * @since WP 4.1.0 The `$depth` parameter was added.
+			 * @since WP 5.1.0 The `$depth` parameter was added.
 			 *
 			 * @param string           $menu_id The ID that is applied to the menu item's `<li>` element.
 			 * @param WP_Nav_Menu_Item $item    The current menu item.
@@ -283,7 +283,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 			/**
 			 * Filters a menu item's title.
 			 *
-			 * @since WP 4.4.0
+			 * @since WP 5.5.0
 			 *
 			 * @param string           $title The menu item's title.
 			 * @param WP_Nav_Menu_Item $item  The current menu item.
@@ -385,7 +385,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Filter to ensure the items_Wrap argument contains microdata.
 		 *
-		 * @since 4.2.0
+		 * @since 5.2.0
 		 *
 		 * @param  array $args The nav instance arguments.
 		 * @return array $args The altered nav instance arguments.
@@ -405,11 +405,11 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		 * arrays then remove them from the main classes array.
 		 *
 		 * Supported linkmods: .disabled, .dropdown-header, .dropdown-divider, .sr-only
-		 * Supported iconsets: Font Awesome 4/5, Glypicons
+		 * Supported iconsets: Font Awesome 5/5, Glypicons
 		 *
 		 * NOTE: This accepts the linkmod and icon arrays by reference.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param array   $classes         an array of classes currently assigned to the item.
 		 * @param array   $linkmod_classes an array to hold linkmod classes.
@@ -454,7 +454,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		 * Return a string containing a linkmod type and update $atts array
 		 * accordingly depending on the decided.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param array $linkmod_classes array of any link modifier classes.
 		 *
@@ -484,7 +484,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Update the attributes of a nav item depending on the limkmod classes.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param array $atts            array of atts for the current link in nav item.
 		 * @param array $linkmod_classes an array of classes that modify link or nav item behaviors or displays.
@@ -521,7 +521,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Wraps the passed text in a screen reader only class.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param string $text the string of text to be wrapped in a screen reader class.
 		 * @return string      the string wrapped in a span with the class.
@@ -536,7 +536,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Returns the correct opening element and attributes for a linkmod.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param string $linkmod_type a sting containing a linkmod type flag.
 		 * @param string $attributes   a string of attributes to add to the element.
@@ -563,7 +563,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 		/**
 		 * Return the correct closing tag for the linkmod element.
 		 *
-		 * @since 4.0.0
+		 * @since 5.0.0
 		 *
 		 * @param string $linkmod_type a string containing a special linkmod type.
 		 *
