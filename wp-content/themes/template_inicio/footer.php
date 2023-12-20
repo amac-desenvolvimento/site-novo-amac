@@ -15,16 +15,16 @@
             <span>CEP: 36010-040</span>
         </div>
         <div class="child_container_footer websites">
-            <span><a href="#" class="link-footer">Área Restrita</a></span><br/>
-            <span><a href="#" class="link-footer">WebMail</a></span><br/>
-            <span><a href="#" class="link-footer">Transparência</a></span><br/>
+            <span><a href="https://amac.com.br/wp-admin" class="link-footer">Área Restrita</a></span><br/>
+            <span><a href="https://webmail.amac.org.br" class="link-footer">WebMail</a></span><br/>
+            <span><a href="http://amac.org.br/transparencia/" class="link-footer">Transparência</a></span><br/>
 
         </div>
 
         <div class="child_container_footer contato">
-            <span><a href="#" class="link-footer">Fale Conosco</a></span><br/>
-            <span><a href="#" class="link-footer">Nossos Endereços</a></span><br/>
-            <span><a href="http://10.35.0.12/site-novo-amac/?cat=20" class="link-footer">Trabalhe Conosco</a></span><br/>
+            <span><a href="http://amac.org.br/contato/" class="link-footer">Fale Conosco</a></span><br/>
+            <span><a href="http://amac.org.br/nossos-enderecos/" class="link-footer">Nossos Endereços</a></span><br/>
+            <span><a href="http://amac.org.br/pagina/processo-seletivo/" class="link-footer">Trabalhe Conosco</a></span><br/>
             <span><a href= "#" class="link-footer">obs: Revisar links quando for pro ar</a></span><br/>
 
 </div>
