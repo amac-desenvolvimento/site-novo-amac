@@ -29,7 +29,7 @@ function flaviene_lab_config(){
         register_nav_menus(
             array(
                 'flaviene_lab_main_menu1'=>'flaviene lab Main Menu - 1',
-                'flaviene_lab_main_menu2'=>'flaviene lab Main Menu - 2'
+                //'flaviene_lab_main_menu2'=>'flaviene lab Main Menu - 2'
                             )
             );
       
