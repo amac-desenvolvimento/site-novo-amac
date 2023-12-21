@@ -26,12 +26,9 @@ while ($blog->have_posts()) :
     </div>
     <div class= "blog-content">
     <?php the_excerpt(); ?>
-    <a href="<?php echo get_permalink(); ?>" class="link-read-more">Ver vaga</a>
+    <a href="<?php echo get_permalink(); ?>" class="link-read-more">Leia Mais...</a>
     </div>
-    <div class= "blog-image">
-    <?php the_post_thumbnail(); ?>
-    </div>
-
+    
 
 </div>
    <?php
