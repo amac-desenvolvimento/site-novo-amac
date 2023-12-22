@@ -25,7 +25,6 @@
             <span><a href="http://amac.org.br/contato/" class="link-footer">Fale Conosco</a></span><br/>
             <span><a href="http://amac.org.br/nossos-enderecos/" class="link-footer">Nossos Endereços</a></span><br/>
             <span><a href="http://amac.org.br/pagina/processo-seletivo/" class="link-footer">Trabalhe Conosco</a></span><br/>
-            <span><a href= "#" class="link-footer">obs: Revisar links quando for pro ar</a></span><br/>
 
 </div>
         <div class="child_container_footer politicas">
