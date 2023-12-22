@@ -79,7 +79,7 @@ if ($alerta->have_posts()) {
             <?php $the_content = apply_filters('the_content', get_the_content()); ?>
             <!-- html -->
 
-            <div class="content-servicos card border border-0" style="width: 18rem">
+            <div class="content-servicos card border border-0">
                 <?php
                 if (has_post_thumbnail()):
                     
