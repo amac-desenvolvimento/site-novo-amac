@@ -171,13 +171,10 @@ box-shadow: 2px 2px 2px 2px #707070;
 
 }
 
-.contentt-artigo{
-    text-align: justify;
-}
 .title-section{
-font-size: 35px;
-padding-left: 20%;
-
+font-size: 30px;
+text-align: end;
+width: 100%;
 }
 
 .title-artigo{

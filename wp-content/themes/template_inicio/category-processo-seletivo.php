@@ -10,7 +10,7 @@ get_header();
 <?php
 $args = array(
     'category__in' => array(get_query_var('cat')),
-    'posts_per_page' => 2,
+    'posts_per_page' => 200,
     'orderby' => 'date',
     'order' => 'desc'
 );
@@ -22,7 +22,7 @@ while ($blog->have_posts()) :
  <div class= "blog-body mx-auto mt-4">
   
     <div class= "blog-title mt-3">
-    <p class = "title-blog fw-bold"> <a href="<?php echo get_permalink(); ?>" ><?php the_title();?></a> - <span class = "date-blog"><?php echo get_the_modified_date(); ?></span></p>  
+    <p class = "title-blog fw-bold"> <a href="<?php echo get_permalink(); ?>" ><?php the_title();?></a> - <span class = "date-blog"><?php echo get_the_date(); ?></span></p>  
     </div>
     <div class= "blog-content">
     <?php the_excerpt(); ?>
@@ -43,15 +43,6 @@ endif;
 </div>
 
 </div>
-
-<?php
-the_posts_pagination( array(
-    'mid_size' => 2,
-    'prev_text' => __( 'Anterior', 'textdomain' ),
-    'next_text' => __( 'Próxima', 'textdomain' ),
-    ) );
-?>
-
 
 <?php
 get_footer();

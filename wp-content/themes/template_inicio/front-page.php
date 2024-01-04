@@ -39,19 +39,21 @@ if ($alerta->have_posts()) {
 <div class="mt-2">
     <div class="container_estatistica">
         <div class="child_container_estatistica endereco">
-            <h2 class="mb-1">3.000</h2>
+            <h2 class="mb-1">3.467</h2>
             <span>crianças atendidas pela creches</span><br />
-
+            <small>por mês</small>
         </div>
         <div class="child_container_estatistica websites">
-            <h2 class="mb-1">200</h2>
-            <span>adolescentes atendidos pelo PROMAD</span><br />
+            <h2 class="mb-1">511</h2>
+            <span>Adolescentes atendidos pelo PROMAD</span><br/>
+            <small>por mês</small>
 
         </div>
 
         <div class="child_container_estatistica contato">
-            <h2 class="mb-1">350</h2>
-            <span>pessoas em situação de rua atendidas</span><br />
+            <h2 class="mb-1">3.148</h2>
+            <span>Atendimentos nos Centros de Convivência</span><br />
+            <small>por mês</small>
         </div>
 
         <div class="child_container_estatistica politicas">
@@ -108,7 +110,7 @@ if ($alerta->have_posts()) {
 
 
 <!-- Artigos -->
-<div class="container-artigo mx-auto mt-5" style="width:98%">
+<div class="container-artigo mt-5">
     <?php
     $args_artigo = array(
         'posts_per_page' => 3,
@@ -118,7 +120,8 @@ if ($alerta->have_posts()) {
     $artigo = new WP_Query($args_artigo);
     ?>
     <div class="title-section">
-        Notícias, Artigos e Afins
+        <p >Notícias, Artigos e Afins</p>
+      <a href="http://novosite.amac.org.br/pagina/blog/"> <span style="font-size:12pt;">Para mais notícias...</span> </a>
     </div>
     <?php
     if ($artigo->have_posts()) :
