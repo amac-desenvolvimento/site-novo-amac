@@ -19,18 +19,21 @@ if ($blog->have_posts()) :
 while ($blog->have_posts()) :
     $blog->the_post();
     ?>
- <div class= "blog-body mx-auto mt-4">
-  
-    <div class= "blog-title mt-3">
-    <p class = "title-blog fw-bold"> <a href="<?php echo get_permalink(); ?>" ><?php the_title();?></a></p>  
+ <div class="blog-body mb-5">
+        <div class="foto">
+            <?php the_post_thumbnail('medium', ['class' => 'rounded']); ?>
+        </div>
+        <div class="titulo">
+        <a class = "title-blog fw-bold" href="<?php echo get_permalink(); ?>" ><?php the_title();?></a></span>
+        </div>
+        <div class="conteudo">
+            <?php the_excerpt(); ?>
+        </div>
+        <div class="leia-mais">
+            <a href="<?php echo get_permalink(); ?>" class="link-read-more-blog">Leia Mais...</a>
+        </div>
+        
     </div>
-    <div class= "blog-content">
-    <?php the_excerpt(); ?>
-    <a href="<?php echo get_permalink(); ?>" class="link-read-more">Leia Mais...</a>
-    </div>
-    
-
-</div>
    <?php
   
 endwhile;

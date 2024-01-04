@@ -335,14 +335,43 @@ hr.hr-line-artigo{
     color: #404040;
 }
 
+
+
+/* Area de formatação categoria blog */
+
 .space-blog{padding-top: 8%;}
 
+.foto{
+
+    grid-area: foto;
+    width: 400px;
+}
+.titulo{
+
+    grid-area: titulo;
+    width: 300px;
+
+}
+.conteudo{
+    grid-area: conteudo;
+    width: 400px;
+}
+
+.leia-mais{
+    grid-area: leia-mais;
+    width: 700px;
+}
 .blog-body{
-    width: 60%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 300px 400px;
     grid-template-rows: auto;
-    place-self: center;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "foto titulo"
+    "foto conteudo"
+    "foto leia-mais";
+    justify-content: center;
 
 }
 
@@ -351,11 +380,7 @@ hr.hr-line-artigo{
     font-size: 12pt;
     font-weight: 700;
 }
-.category-blog {
-    text-decoration: none;
-    font-size: 12pt;
-    color: #404040;
-}
+
 .category-blog {
     text-decoration: underline;
     font-size: 12pt;
@@ -368,17 +393,12 @@ hr.hr-line-artigo{
     font-size: 11pt;
 }
 
-.blog-image{
-    width: 100%;
-    margin-top: 25px;
+.link-read-more-blog{
+    font-size: 11px;
+    font-weight: bold;
 }
 
-.blog-image .wp-post-image{
-justify-self: center;
-width: 600px;    
-height: 350px;
-}
-
+/* fim categoria blog */
 .nav-links{
    margin: auto;
    margin-top: 20px;
