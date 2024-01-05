@@ -4,6 +4,16 @@
      font-family: 'Montserrat', sans-serif;
 }
  
+
+.a-canvas{
+    display:none;
+}
+
+.menu-1{
+    display:none;
+}
+
+
 a:link{
     color: #AF4224;
     text-decoration: none;

@@ -12,6 +12,29 @@
 
 <body>
     <header>
+<!-- Inicio Off-Canvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenus" aria-labelledby="offcanvasMenusLabel">
+    <button type="button" class="btn-close text-reset close-canvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div id="menu1-offcanvas" class="menu-1-offcanvas">
+        <nav class="main-menu navbar navbar-expand-md navbar-light"
+            role="navigation">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'narrativa_lab_main_menu-1',
+                    'depth' => 1,
+                    'container' => 'div',
+                    'container_class' => 'navbar-collapse',
+                    'container_id' => 'bs-example-navbar-collapse-1',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker' => new WP_Bootstrap_Navwalker()
+                ));
+                ?>   
+        </nav>
+    </div>
+</div>
+<!-- Final Off-Canvas -->
+
     <div class="header">
         <div class="logo mb-2 ms-5">
                 <a href="<?php echo home_url('/'); ?>">
@@ -23,6 +46,12 @@
                     <?php endif; ?>
                 </a>
             </div>
+            
+        <div class="a-canvas">
+            <a data-bs-toggle="offcanvas" href="#offcanvasMenus" role="button" aria-controls="offcanvasMenus">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.svg" style="width:24px; height: auto;">
+            </a>
+        </div>
             <div class="menu1">
                 <nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
                     <div class="container">
