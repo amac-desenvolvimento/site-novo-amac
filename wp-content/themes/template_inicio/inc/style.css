@@ -66,6 +66,20 @@ a:visited {
     height: auto;
 }
 
+@media screen and (max-device-width: 1280px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(0,0,0,.55);
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .navbar-light .navbar-nav .nav-link a:hover{
+        color: rgba(0,0,0,.55);
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+}
+
 /* Começo da div slider */
 
 .corpo_site{
@@ -331,12 +345,10 @@ hr.hr-line-artigo{
 .space-blog{padding-top: 8%;}
 
 .foto{
-
     grid-area: foto;
     width: 400px;
 }
 .titulo{
-
     grid-area: titulo;
     width: 300px;
 
@@ -501,27 +513,37 @@ border-radius: 10px 10px 10px 10px;
     }
     .a-canvas{
         grid-area: acanvas;
+    }
+    .header{
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "logo acanvas";
+    
+    }
+
+    .menu-1{
+        display: none;
+     }
+
+    .a-canvas{
         display: inline;
         margin-left: 10%;
-       
-    }
-    
-    .menu1{
-        display: none;
      }
 
     .header{
         width: 100%;
         display: inline-grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 1fr;
         position: fixed;
-        background: rgba(0, 0, 0, 0.0);
-        grid-template-areas:
-        "acanvas logo";
-        justify-content: space-between;
+        background: rgba(250, 250, 250, 0.826);
+        z-index:3;
+    
+       
     }
-
-
     .container_estatistica{
     background: #ffffff;    
     color:#ffffff;
@@ -598,6 +620,26 @@ border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     }
     
+    .foto{
+        grid-area: foto;
+        width: 300px;
+    }
+    .titulo{
+        grid-area: titulo;
+        width: 300px;
+    
+    }
+    .conteudo{
+        grid-area: conteudo;
+        width: 300px;
+    }
+    
+    .leia-mais{
+        grid-area: leia-mais;
+        width: 300px;
+    }
+
+
     .blog-body{
         width: 100%;
         display: grid;
@@ -610,8 +652,6 @@ border-radius: 10px 10px 10px 10px;
         "leia-mais";
     
     }
-    .conteudo{
-        width: 90;
-    }
+    
     }
     
