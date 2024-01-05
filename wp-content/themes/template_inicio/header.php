@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
                 <?php
                 wp_nav_menu(array(
-                    'theme_location' => 'flaviene_lab_main_men',
+                    'theme_location' => 'flaviene_lab_main_menu1',
                     'depth' => 1,
                     'container' => 'div',
                     'container_class' => 'navbar-collapse',

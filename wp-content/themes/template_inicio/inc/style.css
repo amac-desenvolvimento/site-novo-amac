@@ -3,16 +3,9 @@
 *{
      font-family: 'Montserrat', sans-serif;
 }
- 
-
-.a-canvas{
-    display:none;
-}
-
-.menu-1{
-    display:none;
-}
-
+ .a-canvas{
+    display: none;
+ }
 
 a:link{
     color: #AF4224;
@@ -517,6 +510,31 @@ border-radius: 10px 10px 10px 10px;
 /* --------------------------------------------------------*/
 
 @media screen and (max-width: 483px) {
+    .logo{
+        grid-area: logo;
+    }
+    .a-canvas{
+        grid-area: acanvas;
+    }
+    .header{
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "logo acanvas"
+      ;
+    
+    }
+
+    .menu-1{
+        display: none;
+     }
+
+    .a-canvas{
+        display: inline;
+        margin-left: 10%;
+     }
 
     .header{
         width: 100%;
@@ -618,7 +636,7 @@ border-radius: 10px 10px 10px 10px;
     
     }
     .conteudo{
-        width: 95%;
+        width: 90;
     }
     }
     
