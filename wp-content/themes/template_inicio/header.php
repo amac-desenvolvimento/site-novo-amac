@@ -16,11 +16,10 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenus" aria-labelledby="offcanvasMenusLabel">
     <button type="button" class="btn-close text-reset close-canvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     <div id="menu1-offcanvas" class="menu-1-offcanvas">
-        <nav class="main-menu navbar navbar-expand-md navbar-light"
-            role="navigation">
+    <nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
                 <?php
                 wp_nav_menu(array(
-                    'theme_location' => 'narrativa_lab_main_menu-1',
+                    'theme_location' => 'flaviene_lab_main_men',
                     'depth' => 1,
                     'container' => 'div',
                     'container_class' => 'navbar-collapse',
@@ -49,19 +48,12 @@
             
         <div class="a-canvas">
             <a data-bs-toggle="offcanvas" href="#offcanvasMenus" role="button" aria-controls="offcanvasMenus">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.svg" style="width:24px; height: auto;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.png" style="width:24px; height: auto;">
             </a>
         </div>
             <div class="menu1">
                 <nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
                     <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
-                            aria-expanded="false"
-                            aria-label="<?php esc_attr_e( 'Toggle navigation', 'template_inicio' ); ?>">
-                            <span class="navbar-toggler-icon text-end"></span>
-                        </button>
                         <?php
         wp_nav_menu( array(
             'theme_location'    => 'flaviene_lab_main_menu1',
