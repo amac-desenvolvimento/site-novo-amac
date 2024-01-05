@@ -498,8 +498,6 @@ border-radius: 10px 10px 10px 10px;
 @media screen and (max-width: 483px) {
     .logo{
         grid-area: logo;
-        background-color: blue;
-        
     }
     .a-canvas{
         grid-area: acanvas;
