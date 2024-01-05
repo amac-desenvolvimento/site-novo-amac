@@ -48,7 +48,7 @@
             
         <div class="a-canvas">
             <a data-bs-toggle="offcanvas" href="#offcanvasMenus" role="button" aria-controls="offcanvasMenus">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.png" style="width:48px; height: auto;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.png" style="width:24px; height: auto;">
             </a>
         </div>
             <div class="menu1">
