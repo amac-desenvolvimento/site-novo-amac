@@ -6,7 +6,7 @@ get_header();
 ?>
 <div class="space-blog"></div>
    <h2 class="text-center mt-3 mb-1">Processos Seletivos</h2>
-
+  <p class="text-center mt-3 mb-1"><a href="http://antigosite-v2.amac.org.br/trabalhe-na-amac.html">Para acesso aos processos seletivos anteriores e abertos 001 ao 019 - Clique Aqui</a></p>
 <?php
 $args = array(
     'category__in' => array(get_query_var('cat')),

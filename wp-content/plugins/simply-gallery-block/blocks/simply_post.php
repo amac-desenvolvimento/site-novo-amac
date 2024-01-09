@@ -10,15 +10,18 @@ function pgc_sgb_shortcode_render($atts, $content = null)
 	if (!empty($atts['id'])) {
 		$post_id = intval($atts['id']);
 		$postData = get_post_field('post_content', $post_id, 'raw');
+		$postStatus = get_post_field('post_status', $post_id, 'attribute');
 	} elseif (!empty($atts['slug'])) {
 		$post_slug = $atts['slug'];
 		$post = get_page_by_path($post_slug, ARRAY_A, PGC_SGB_POST_TYPE);
 		if (isset($post)) {
 			$postData = $post['post_content'];
+			$postStatus = $post['post_status'];
 		} else {
 			$postData = '';
 		}
 	}
+	if ($postStatus === '' || is_wp_error($postStatus) || $postStatus !== 'publish') return '';
 	if ($postData === '' || is_wp_error($postData)) return '';
 	$blocks = parse_blocks($postData);
 	$output = '';

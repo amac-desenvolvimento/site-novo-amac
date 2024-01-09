@@ -423,7 +423,7 @@ const plus = (0,external_React_namespaceObject.createElement)(external_wp_primit
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 24 24"
 }, (0,external_React_namespaceObject.createElement)(external_wp_primitives_namespaceObject.Path, {
-  d: "M18 11.2h-5.2V6h-1.6v5.2H6v1.6h5.2V18h1.6v-5.2H18z"
+  d: "M11 12.5V17.5H12.5V12.5H17.5V11H12.5V6H11V11H6V12.5H11Z"
 }));
 /* harmony default export */ var library_plus = (plus);
 
@@ -709,7 +709,8 @@ function MoreMenuDropdown({
     },
     toggleProps: {
       tooltipPosition: 'bottom',
-      ...toggleProps
+      ...toggleProps,
+      size: 'compact'
     }
   }, onClose => children(onClose));
 }
@@ -2174,6 +2175,7 @@ function BlockAppender(props) {
 
 
 
+
 /**
  * Internal dependencies
  */
@@ -2195,6 +2197,7 @@ function SidebarBlockEditor({
   inspector
 }) {
   const [isInserterOpened, setIsInserterOpened] = useInserter(inserter);
+  const isMediumViewport = (0,external_wp_compose_namespaceObject.useViewportMatch)('small');
   const {
     hasUploadPermissions,
     isFixedToolbarActive,
@@ -2232,11 +2235,11 @@ function SidebarBlockEditor({
       ...blockEditorSettings,
       __experimentalSetIsInserterOpened: setIsInserterOpened,
       mediaUpload: mediaUploadBlockEditor,
-      hasFixedToolbar: isFixedToolbarActive,
+      hasFixedToolbar: isFixedToolbarActive || !isMediumViewport,
       keepCaretInsideBlock,
       __unstableHasCustomAppender: true
     };
-  }, [hasUploadPermissions, blockEditorSettings, isFixedToolbarActive, keepCaretInsideBlock, setIsInserterOpened]);
+  }, [hasUploadPermissions, blockEditorSettings, isFixedToolbarActive, isMediumViewport, keepCaretInsideBlock, setIsInserterOpened]);
   if (isWelcomeGuideActive) {
     return (0,external_React_namespaceObject.createElement)(WelcomeGuide, {
       sidebar: sidebar
@@ -2254,14 +2257,16 @@ function SidebarBlockEditor({
     inserter: inserter,
     isInserterOpened: isInserterOpened,
     setIsInserterOpened: setIsInserterOpened,
-    isFixedToolbarActive: isFixedToolbarActive
-  }), (0,external_React_namespaceObject.createElement)(external_wp_blockEditor_namespaceObject.BlockTools, null, (0,external_React_namespaceObject.createElement)(BlockCanvas, {
+    isFixedToolbarActive: isFixedToolbarActive || !isMediumViewport
+  }), (isFixedToolbarActive || !isMediumViewport) && (0,external_React_namespaceObject.createElement)(external_wp_blockEditor_namespaceObject.BlockToolbar, {
+    hideDragHandle: true
+  }), (0,external_React_namespaceObject.createElement)(BlockCanvas, {
     shouldIframe: false,
     styles: settings.defaultEditorStyles,
     height: "100%"
   }, (0,external_React_namespaceObject.createElement)(external_wp_blockEditor_namespaceObject.BlockList, {
     renderAppender: BlockAppender
-  }))), (0,external_wp_element_namespaceObject.createPortal)(
+  })), (0,external_wp_element_namespaceObject.createPortal)(
   // This is a temporary hack to prevent button component inside <BlockInspector>
   // from submitting form when type="button" is not specified.
   (0,external_React_namespaceObject.createElement)("form", {

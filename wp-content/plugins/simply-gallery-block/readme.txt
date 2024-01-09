@@ -4,9 +4,9 @@ Plugin URI: https://simplygallery.co
 Contributors: gallerycreator
 Tags: block, image gallery, video gallery, lightbox, gallery, wordpress gallery plugin
 Requires at least: 5.8.0
-Tested up to: 6.3
+Tested up to: 6.4
 Requires PHP: 5.3.8
-Stable tag: 3.1.6
+Stable tag: 3.1.9
 License: GPL-2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -127,12 +127,27 @@ Yes! SimpLy Gallery Blocks's core features are absolutely free.
 
 == Changelog ==
 
+= 3.1.9 =
+* Added: gallery status to the “SimpLy Saved Gallery” block
+* Added: gallery status to the "SimpLy Gallery" dashboard widget
+* Fixed: shortcode rendering for unpublished galleries
+* Tweak: Updated Freemius SDK (2.6.1)
+
+= 3.1.8 =
+* Added: support for YouTube Shorts
+* Fixed: AlbumNavigator - error displaying some galleries
+
+= 3.1.7 =
+* Added: mode for automatically loading pages after the first click of the "Load More" button [Live DEMO](https://simplygallery.co/portfolio2/)
+* Update: Freemius SDK
+* Fixed: Albums and AlbumNavigator - error displaying some galleries
+
 = 3.1.6 =
 * Update: Freemius SDK
 
 = 3.1.5 =
-Tweak: Updated Freemius SDK (2.5.10).
-Fix: Security fix.
+* Tweak: Updated Freemius SDK (2.5.10).
+* Fix: Security fix.
 
 = 3.1.4 =
 * Update: Freemius SDK

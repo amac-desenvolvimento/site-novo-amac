@@ -69,7 +69,7 @@ if ( $categories_slug !="processo-seletivo" ) {;
 </div>	
 <?php 
 } else { 
-    echo "<p class='font-weight-bold'><a href='http://10.35.0.12/site-novo-amac/?cat=20'>Retorne a listagem de Processos Seletivos</a></p>";
+    echo "<p class='font-weight-bold'><a href='https://amac.org.br/pagina/processo-seletivo/'>Retorne a listagem de Processos Seletivos</a></p>";
    
 }
 ?>

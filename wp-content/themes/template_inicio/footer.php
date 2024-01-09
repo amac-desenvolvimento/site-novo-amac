@@ -9,7 +9,7 @@
 <footer>
     <div class="container_footer">
         <div class="child_container_footer endereco">
-            <span>Rua Espiirito Santo, 434</span><br/>
+            <span>Rua Espirito Santo, 434</span><br/>
             <span>Centro - Juiz de Fora/MG</span><br/>
             <span>Telefone: (32) 3690-7940</span><br/>
             <span>CEP: 36010-040</span>
@@ -22,21 +22,25 @@
         </div>
 
         <div class="child_container_footer contato">
-            <span><a href="http://amac.org.br/contato/" class="link-footer">Fale Conosco</a></span><br/>
-            <span><a href="http://amac.org.br/nossos-enderecos/" class="link-footer">Nossos Endereços</a></span><br/>
-            <span><a href="http://amac.org.br/pagina/processo-seletivo/" class="link-footer">Trabalhe Conosco</a></span><br/>
-            <span><a href= "#" class="link-footer">obs: Revisar links quando for pro ar</a></span><br/>
+            <span><a href="https://amac.org.br/contato/" class="link-footer">Fale Conosco</a></span><br/>
+            <span><a href="https://amac.org.br/nossos-enderecos/" class="link-footer">Nossos Endereços</a></span><br/>
+            <span><a href="https://amac.org.br/pagina/processo-seletivo/" class="link-footer">Trabalhe Conosco</a></span><br/>
+            <span><a href= "#" class="link-footer">obs: Links passando por revisão</a></span><br/>
 
 </div>
         <div class="child_container_footer politicas">
             <span><a href="#" class="link-footer">Politica de Privacidade</a></span><br/>
             <span><a href="#" class="link-footer">Politica e Uso</a></span><br/>
-            <span><a href="#" class="link-footer">Arquivos 1</a></span><br/>
-            <span><a href="#" class="link-footer">Arquivos 2</a></span><br/>
+            <span><a href="http://antigosite-v1.amac.org.br" class="link-footer">Site Antigo - 1</a></span><br/>
+            <span><a href="http://antigosite-v2.amac.org.br" class="link-footer">Site Antigo - 2</a></span><br/>
         </div>
 
     </div>
 </footer>
+<div style="font-size: 11px; text-align: end"> 
+Desenvolvimento: Supervisão de Tecnologia da Informação - Alexsander Talles - Flaviene Melo
+</div>
+
 <?php wp_footer() ?>
 </body>
 

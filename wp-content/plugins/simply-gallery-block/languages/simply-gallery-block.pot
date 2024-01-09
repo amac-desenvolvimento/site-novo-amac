@@ -2,14 +2,14 @@
 # This file is distributed under the GPL2+.
 msgid ""
 msgstr ""
-"Project-Id-Version: SimpLy Gallery Block & Lightbox 3.1.6\n"
+"Project-Id-Version: SimpLy Gallery Block & Lightbox 3.1.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/sgb-global-plugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2023-09-12T05:39:24+00:00\n"
+"POT-Creation-Date: 2023-12-03T10:53:11+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.6.0\n"
 "X-Domain: simply-gallery-block\n"
@@ -40,153 +40,153 @@ msgstr ""
 msgid "Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:195
+#: blocks/simply_post.php:198
 msgid "SimpLy Album EMPTY"
 msgstr ""
 
-#: blocks/simply_post.php:391
+#: blocks/simply_post.php:394
 msgid "SimpLy Albums"
 msgstr ""
 
-#: blocks/simply_post.php:392
+#: blocks/simply_post.php:395
 msgid "Album"
 msgstr ""
 
-#: blocks/simply_post.php:393
+#: blocks/simply_post.php:396
 msgid "Search Albums"
 msgstr ""
 
-#: blocks/simply_post.php:394
+#: blocks/simply_post.php:397
 msgid "All SimpLy Albums"
 msgstr ""
 
-#: blocks/simply_post.php:395
+#: blocks/simply_post.php:398
 msgid "View SunoLy Album"
 msgstr ""
 
-#: blocks/simply_post.php:396
+#: blocks/simply_post.php:399
 msgid "Parent Album"
 msgstr ""
 
-#: blocks/simply_post.php:397
+#: blocks/simply_post.php:400
 msgid "Parent Album:"
 msgstr ""
 
-#: blocks/simply_post.php:398
+#: blocks/simply_post.php:401
 msgid "Edit Album"
 msgstr ""
 
-#: blocks/simply_post.php:399
+#: blocks/simply_post.php:402
 msgid "Update Album"
 msgstr ""
 
-#: blocks/simply_post.php:400
+#: blocks/simply_post.php:403
 msgid "Add New Album"
 msgstr ""
 
-#: blocks/simply_post.php:401
+#: blocks/simply_post.php:404
 msgid "New Album Name"
 msgstr ""
 
-#: blocks/simply_post.php:402
+#: blocks/simply_post.php:405
 msgid "Albums"
 msgstr ""
 
-#: blocks/simply_post.php:431
+#: blocks/simply_post.php:434
 msgid "SimpLy Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:432
+#: blocks/simply_post.php:435
 msgid "Galleries"
 msgstr ""
 
-#: blocks/simply_post.php:433
+#: blocks/simply_post.php:436
 msgid "Add New"
 msgstr ""
 
-#: blocks/simply_post.php:434
+#: blocks/simply_post.php:437
 msgid "Add New SimpLy Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:435
+#: blocks/simply_post.php:438
 #: blocks/dist/dashboard.widget.build.js:1
 #: src/blocks/dashboard_widget/ItemView.js:19
 msgid "Edit Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:436
+#: blocks/simply_post.php:439
 msgid "View SimpLy Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:437
+#: blocks/simply_post.php:440
 msgid "Search SimpLy Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:438
+#: blocks/simply_post.php:441
 msgid "No Galleries Found"
 msgstr ""
 
-#: blocks/simply_post.php:439
+#: blocks/simply_post.php:442
 msgid "No Galleries Found in Trash"
 msgstr ""
 
-#: blocks/simply_post.php:440
+#: blocks/simply_post.php:443
 msgid "Parent Gallery"
 msgstr ""
 
-#: blocks/simply_post.php:441
+#: blocks/simply_post.php:444
 msgid "Filter Galleries list"
 msgstr ""
 
-#: blocks/simply_post.php:442
+#: blocks/simply_post.php:445
 msgid "Galleries list navigation"
 msgstr ""
 
-#: blocks/simply_post.php:443
+#: blocks/simply_post.php:446
 msgid "Galleries list"
 msgstr ""
 
-#: blocks/simply_post.php:493
+#: blocks/simply_post.php:496
 msgid "Show All"
 msgstr ""
 
-#: blocks/simply_post.php:519
+#: blocks/simply_post.php:522
 msgid "If you like, you may enter custom structures for your SimpLy gallery URLs here. For example, using <code>pgc_simply_gallery</code> would make your gallery links like <code>%spgc_simply_gallery/simply-gallery/</code>. This setting affects gallery URLs only."
 msgstr ""
 
-#: blocks/simply_post.php:534
+#: blocks/simply_post.php:537
 msgid "If you like, you may enter custom Archive page slug for your SimpLy galleries. For example, using <code>simply_galleries</code> would make your galleries archive links like <code>%ssimply_galleries/</code>. This setting affects gallery URLs only."
 msgstr ""
 
-#: blocks/simply_post.php:600
+#: blocks/simply_post.php:603
 msgid "SimpLy Gallery permalinks"
 msgstr ""
 
-#: blocks/simply_post.php:756
+#: blocks/simply_post.php:759
 msgid "You are using the legacy \"Classic Editor\" page builder. This makes visiting this page meaningless. Time to step forward and try the Block Editor!"
 msgstr ""
 
-#: blocks/simply_post.php:770
+#: blocks/simply_post.php:773
 msgid "The SimpLy Gallery Directory allows you to intelligently structure your media content. It will also allow you to easily manage the content of galleries that need frequent updates. Galleries from this directory can be easily used as WordPress Widgets, as well as added to third-party Page Builders (such as Elementor and others that support the Shortcodes system)."
 msgstr ""
 
-#: blocks/simply_post.php:779
+#: blocks/simply_post.php:782
 msgid "Name"
 msgstr ""
 
-#: blocks/simply_post.php:780
-#: blocks/simply_post.php:804
+#: blocks/simply_post.php:783
+#: blocks/simply_post.php:807
 #: blocks/dist/post.editor.build.js:1
 #: src/post_editor/PluginInspector.js:18
 #: src/post_editor/PluginInspector.js:23
 msgid "Shortcode"
 msgstr ""
 
-#: blocks/simply_post.php:802
+#: blocks/simply_post.php:805
 msgid "Cover"
 msgstr ""
 
-#: blocks/simply_post.php:803
+#: blocks/simply_post.php:806
 #: blocks/simply_widget.php:64
 #: blocks/dist/blocks/blocks.build.js:1
 #: dist/albums.page.build.js:1
@@ -203,7 +203,7 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: blocks/simply_post.php:805
+#: blocks/simply_post.php:808
 #: blocks/dist/blocks/blocks.build.js:1
 #: dist/albums.page.build.js:1
 #: src/post_editor/blocks/albums_components/InspectorGalleriesManager.js:44
@@ -247,46 +247,46 @@ msgid "FEATURES & FAQ"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/inspector.js:34
+#: src/post_editor/blocks/galleryselector/components/inspector.js:33
 msgid "Select Saved Gallery"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:173
-#: src/post_editor/blocks/galleryselector/components/edit.js:194
-#: src/post_editor/blocks/galleryselector/components/inspector.js:49
+#: src/post_editor/blocks/galleryselector/components/edit.js:195
+#: src/post_editor/blocks/galleryselector/components/edit.js:216
+#: src/post_editor/blocks/galleryselector/components/inspector.js:48
 msgid "Reload List"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:180
-#: src/post_editor/blocks/galleryselector/components/edit.js:201
-#: src/post_editor/blocks/galleryselector/components/inspector.js:56
+#: src/post_editor/blocks/galleryselector/components/edit.js:202
+#: src/post_editor/blocks/galleryselector/components/edit.js:223
+#: src/post_editor/blocks/galleryselector/components/inspector.js:55
 msgid "Create Gallery"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:99
+#: src/post_editor/blocks/galleryselector/components/edit.js:108
 msgid "gallery is not available!"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:149
+#: src/post_editor/blocks/galleryselector/components/edit.js:171
 msgid "Saved SimpLy Gallery"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:151
+#: src/post_editor/blocks/galleryselector/components/edit.js:173
 msgid "* the selected gallery will be a mirror copy of the saved gallery and will automatically update after the original one."
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:158
+#: src/post_editor/blocks/galleryselector/components/edit.js:180
 msgid "Select a saved gallery"
 msgstr ""
 
 #: blocks/dist/blocks/blocks.build.js:1
-#: src/post_editor/blocks/galleryselector/components/edit.js:188
+#: src/post_editor/blocks/galleryselector/components/edit.js:210
 msgid "Your galleries directory is empty."
 msgstr ""
 
@@ -2152,7 +2152,7 @@ msgid "Create New Gallery"
 msgstr ""
 
 #: blocks/dist/dashboard.widget.build.js:1
-#: src/blocks/dashboard_widget/MetaBoxDashboardInspector.js:167
+#: src/blocks/dashboard_widget/MetaBoxDashboardInspector.js:168
 msgid "You have no published galleries."
 msgstr ""
 
@@ -2350,7 +2350,15 @@ msgstr ""
 #: dist/page.build.js:1
 #: dist/premium-blocks/blocks_pim.build.js:1
 #: dist/premium-pages/page.build.js:1
-#: src/components/inspectors/GalleryLoadMoreInspector.js:14
+#: src/components/inspectors/GalleryLoadMoreInspector.js:10
+msgid "Attention! Doesn't work in page editing mode."
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: dist/page.build.js:1
+#: dist/premium-blocks/blocks_pim.build.js:1
+#: dist/premium-pages/page.build.js:1
+#: src/components/inspectors/GalleryLoadMoreInspector.js:20
 msgid "Items Per Page"
 msgstr ""
 
@@ -2358,7 +2366,15 @@ msgstr ""
 #: dist/page.build.js:1
 #: dist/premium-blocks/blocks_pim.build.js:1
 #: dist/premium-pages/page.build.js:1
-#: src/components/inspectors/GalleryLoadMoreInspector.js:22
+#: src/components/inspectors/GalleryLoadMoreInspector.js:28
+msgid "Automatically load remaining pages"
+msgstr ""
+
+#: dist/blocks.build.js:1
+#: dist/page.build.js:1
+#: dist/premium-blocks/blocks_pim.build.js:1
+#: dist/premium-pages/page.build.js:1
+#: src/components/inspectors/GalleryLoadMoreInspector.js:34
 msgid "Load More Button - Label Text"
 msgstr ""
 
@@ -2366,7 +2382,7 @@ msgstr ""
 #: dist/page.build.js:1
 #: dist/premium-blocks/blocks_pim.build.js:1
 #: dist/premium-pages/page.build.js:1
-#: src/components/inspectors/GalleryLoadMoreInspector.js:27
+#: src/components/inspectors/GalleryLoadMoreInspector.js:39
 msgid "Load More Button - Font Size"
 msgstr ""
 
@@ -2374,7 +2390,7 @@ msgstr ""
 #: dist/page.build.js:1
 #: dist/premium-blocks/blocks_pim.build.js:1
 #: dist/premium-pages/page.build.js:1
-#: src/components/inspectors/GalleryLoadMoreInspector.js:37
+#: src/components/inspectors/GalleryLoadMoreInspector.js:49
 msgid "Load More - Text Color"
 msgstr ""
 
@@ -2382,7 +2398,7 @@ msgstr ""
 #: dist/page.build.js:1
 #: dist/premium-blocks/blocks_pim.build.js:1
 #: dist/premium-pages/page.build.js:1
-#: src/components/inspectors/GalleryLoadMoreInspector.js:44
+#: src/components/inspectors/GalleryLoadMoreInspector.js:56
 msgid "Load More - Background Color"
 msgstr ""
 

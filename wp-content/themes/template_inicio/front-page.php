@@ -43,10 +43,11 @@ if ($alerta->have_posts()) {
             <span>crianças atendidas pela creches</span><br />
             <small>por mês</small>
         </div>
+
         <div class="child_container_estatistica websites">
             <h2 class="mb-1">511</h2>
             <span>Adolescentes atendidos pelo PROMAD</span><br/>
-            <small>por mês</small>
+            <small>por ano</small>
 
         </div>
 
@@ -57,7 +58,7 @@ if ($alerta->have_posts()) {
         </div>
 
         <div class="child_container_estatistica politicas">
-            <h2>Conheça a AMAC</h2><br />
+            <h2><a style="color:#ffffff;" href="https://amac.org.br/sobre/">Conheça a AMAC</a></h2><br />
         </div>
 
     </div>
@@ -68,6 +69,7 @@ if ($alerta->have_posts()) {
 <div class="container-servicos mx-auto">
     <?php
     $args_servicos = array(
+
         'posts_per_page' => 40,
         'category__in' => array(4),
         'orderby' => 'ID',
@@ -121,7 +123,7 @@ if ($alerta->have_posts()) {
     ?>
     <div class="title-section">
         <p >Notícias, Artigos e Afins</p>
-      <a href="http://novosite.amac.org.br/pagina/blog/"> <span style="font-size:12pt;">Para mais notícias...</span> </a>
+      <a href="https://amac.org.br/pagina/blog/"> <span style="font-size:12pt;">Para mais notícias...</span> </a>
     </div>
     <?php
     if ($artigo->have_posts()) :

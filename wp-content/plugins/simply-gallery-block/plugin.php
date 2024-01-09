@@ -6,7 +6,7 @@
  * Description: The highly customizable Lightbox for native WordPress Gallery/Image. And beautiful gallery blocks with advanced Lightbox for photographers, video creators, writers and content marketers. This blocks set will help you create responsive Images, Video, Audio gallery. Three desired layout in one plugin - Masonry, Justified and Grid.
  * Author: GalleryCreator
  * Author URI: https://blockslib.com/
- * Version: 3.1.6
+ * Version: 3.1.9
  * Text Domain: simply-gallery-block
  * Domain Path: /languages
  * License: GPL2+
@@ -24,7 +24,7 @@ if ( !defined( 'ABSPATH' ) ) {
 if ( function_exists( 'pgc_sgb_fs' ) ) {
     pgc_sgb_fs()->set_basename( false, __FILE__ );
 } else {
-    define( 'PGC_SGB_VERSION', '3.1.6' );
+    define( 'PGC_SGB_VERSION', '3.1.9' );
     define( 'PGC_SGB_SLUG', 'simply-gallery-block' );
     define( 'PGC_SGB_BLOCK_PREF', 'wp-block-pgcsimplygalleryblock-' );
     define( 'PGC_SGB_PLUGIN_SLUG', 'pgc-simply-gallery-plugin' );
@@ -721,9 +721,11 @@ if ( function_exists( 'pgc_sgb_fs' ) ) {
                 $term_id = ( isset( $json['term_id'] ) ? $json['term_id'] : null );
                 $q_args = [
                     'post_type'      => $postType,
-                    'post_status'    => 'publish',
                     'posts_per_page' => -1,
                 ];
+                if ( $extended ) {
+                    $q_args['post_status'] = 'publish';
+                }
                 if ( isset( $term_id ) ) {
                     $q_args['tax_query'] = array( array(
                         'taxonomy'         => PGC_SGB_TAXONOMY,
@@ -740,6 +742,7 @@ if ( function_exists( 'pgc_sgb_fs' ) ) {
                         $postData = array();
                         $postData['title'] = ( $post->post_title !== '' ? $post->post_title : $post->ID );
                         $postData['ID'] = $post->ID;
+                        $postData['postStatus'] = $post->post_status;
                         
                         if ( current_user_can( 'read_post', intval( $postData['ID'] ) ) ) {
                             
@@ -790,6 +793,7 @@ if ( function_exists( 'pgc_sgb_fs' ) ) {
                 
                 if ( current_user_can( 'read_post', $id ) ) {
                     $postData = get_post_field( 'post_content', $id, 'display' );
+                    $postStatus = get_post_field( 'post_status', $id, 'attribute' );
                     $output = '';
                     
                     if ( $postData !== '' || !is_wp_error( $postData ) ) {
@@ -799,6 +803,10 @@ if ( function_exists( 'pgc_sgb_fs' ) ) {
                         }
                     }
                     
+                    if ( $postStatus !== '' || !is_wp_error( $postStatus ) ) {
+                        $data['postStatus'] = $postStatus;
+                    }
+                    $data['postID'] = $id;
                     $data['raw'] = $output;
                 }
                 
