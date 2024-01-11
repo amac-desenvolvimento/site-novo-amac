@@ -76,3 +76,22 @@ function mytheme_has_content( $post = 0 ){
   return ( !empty(apply_filters('the_content', $post->post_content)) );
 }
 
+function flaviene_register_sidebars() {
+    register_sidebar( array(
+        'name' => 'Home right Sidebar',
+        'id' => 'home_right_1',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="rounded">',
+        'after_title' => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Home footer',
+        'id' => 'home_right_2',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="rounded">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'flaviene_register_sidebars' );

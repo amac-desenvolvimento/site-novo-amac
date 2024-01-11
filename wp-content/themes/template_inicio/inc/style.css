@@ -374,6 +374,29 @@ hr.hr-line-artigo{
 
 }
 
+.corpo-pagina{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+.blog-corpo-processos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "foto titulo"
+    "foto conteudo"
+    "foto leia-mais";
+    justify-content: center;
+}
+.lista-processos{
+    font-size: 18px;
+}
 .title-blog {
     text-decoration: none;
     font-size: 12pt;

@@ -11,7 +11,7 @@
         <div class="child_container_footer endereco">
             <span>Rua Espirito Santo, 434</span><br/>
             <span>Centro - Juiz de Fora/MG</span><br/>
-            <span>Telefone: (32) 3690-7940</span><br/>
+            <span>Telefone: (32) 3112-3050</span><br/>
             <span>CEP: 36010-040</span>
         </div>
         <div class="child_container_footer websites">
@@ -38,7 +38,7 @@
     </div>
 </footer>
 <div style="font-size: 11px; text-align: end"> 
-Desenvolvimento: Supervisão de Tecnologia da Informação - Alexsander Talles - Flaviene Melo
+Desenvolvimento: Supervisão de Tecnologia da Informação  - Flaviene Melo - Alexsander Talles
 </div>
 
 <?php wp_footer() ?>
