@@ -9,7 +9,7 @@ get_header();
 
 
  <!-- Serviços -->
-<div class="container-servicos mx-auto">
+<div class="container-servicos-page mb-5">
     <?php
     $args_servicos = array(
         'posts_per_page' => 8,
@@ -25,7 +25,7 @@ get_header();
             <?php $the_content = apply_filters('the_content', get_the_content()); ?>
             <!-- html -->
 
-            <div class="content-servicos card border border-0" style="width: 18rem">
+            <div class="content-servicos card border border-0">
                 <?php
                 if (has_post_thumbnail()):
                     
@@ -49,10 +49,6 @@ get_header();
         wp_reset_postdata();
     endif;
     ?>
-</div>
-   
-</div>
-
 </div>
 
 <?php

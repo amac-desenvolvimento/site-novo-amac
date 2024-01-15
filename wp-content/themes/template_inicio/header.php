@@ -14,7 +14,7 @@
     <header>
 <!-- Inicio Off-Canvas -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenus" aria-labelledby="offcanvasMenusLabel">
-    <button type="button" class="btn-close text-reset close-canvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close text-reset close-canvas mt-3 ms-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     <div id="menu1-offcanvas" class="menu-1-offcanvas">
     <nav class="navbar navbar-expand-md navbar-light bg-transparent" role="navigation">
                 <?php
@@ -48,7 +48,7 @@
             
         <div class="a-canvas">
             <a data-bs-toggle="offcanvas" href="#offcanvasMenus" role="button" aria-controls="offcanvasMenus">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.png" style="width:48px; height: auto;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/bars.png" style="width:48px; height: auto; margin-top: 15px">
             </a>
         </div>
             <div class="menu1">

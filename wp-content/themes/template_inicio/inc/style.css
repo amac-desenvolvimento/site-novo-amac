@@ -493,20 +493,6 @@ justify-content: center;
     height: 100%;
 }
     
-.owl-carousel .wp-post-image{
-    width: 40%;
-    height: 400px; 
-    position: relative;
-    object-fit: cover;
-    object-position: center top;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    outline: 1px solid black;
-    outline-offset:-20px;
--webkit-border-radius: 10px 10px 10px 10px;
-border-radius: 10px 10px 10px 10px;
-}
 
 .blog-body{
     width: 100vw;
@@ -545,7 +531,10 @@ border-radius: 10px 10px 10px 10px;
     .menu1{
         display: none;
      }
-
+    .menu-item > .nav-link{
+        padding-left: 30px;
+        font-size: 20pt!important;
+      }
 
      .header{
         width: 100%;
@@ -584,18 +573,18 @@ border-radius: 10px 10px 10px 10px;
     .container-servicos{
     width: 100%;
     display:grid; 
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(auto);
-    padding-top: 20px;
-    
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+ 
     }
     
     .container-artigo{
     width: 100%;
     display:grid; 
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(1, 85%);
     grid-template-rows: repeat(4);
     padding-top:100%;
+    justify-content: center;
     
     }
     
@@ -618,6 +607,14 @@ border-radius: 10px 10px 10px 10px;
         border-bottom: 3px solid #ffffff;
         height: 100%;
     }
+
+    .container-servicos-page{
+        width: 100%;
+        display:grid; 
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        justify-content: center;    
+        }
     
     .foto{
         grid-area: foto;
@@ -649,6 +646,35 @@ border-radius: 10px 10px 10px 10px;
         "conteudo"
         "leia-mais";
     }
+    .coluna-processo{
+        grid-area: processos;
+    }
+
+    .coluna-sidebar{
+        grid-area: sidebar;
+    }
+
+    .corpo-pagina{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "processos"
+        "sidebar"
+        ;
+    }
     
+    .blog-corpo-processos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "titulo"
+        "conteudo"
+        "leia-mais";
+        justify-content: center;
+    }
     }
     

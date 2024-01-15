@@ -66,7 +66,7 @@ if ($alerta->have_posts()) {
 </div>
 
 <!-- Serviços -->
-<div class="container-servicos mx-auto">
+<div class="container-servicos">
     <?php
     $args_servicos = array(
 
